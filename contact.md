@@ -1,18 +1,24 @@
-title: BE International
-description: "Pusat solusi kesihatan dan kebugaran – Shiruto, Néx Bio & Aulora Pant"
-baseurl: "/BE_EJEN"           # kerana repo anda di https://AzlanSihat.github.io/BE_EJEN
-url: "https://AzlanSihat.github.io"
-theme: minima                 # atau tukar kepada theme Jekyll pilihan anda
-plugins:
-  - jekyll-feed
+<!-- contact.md -->
+---
+layout: page
+title: "Hubungi Kami"
+permalink: /contact/
+---
 
-fonts:
-  heading: "Montserrat:600,700"
-  body:    "Lora:400,500"
+Silakan isi borang di bawah untuk pertanyaan:
 
-colors:
-  primary:   "#00539C"
-  secondary: "#FFC20E"
-  neutral1:  "#F5F5F5"
-  neutral2:  "#333333"
-  accent:    "#008E97"
+<form action="https://formspree.io/f/yourFormID" method="POST" class="space-y-4 max-w-md mx-auto">
+  <label class="block">
+    <span class="text-neutral2">Nama:</span>
+    <input type="text" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+  </label>
+  <label class="block">
+    <span class="text-neutral2">Email:</span>
+    <input type="email" name="_replyto" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+  </label>
+  <label class="block">
+    <span class="text-neutral2">Mesej:</span>
+    <textarea name="message" rows="5" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm"></textarea>
+  </label>
+  <button type="submit" class="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-accent">Hantar</button>
+</form>

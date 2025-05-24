@@ -1,0 +1,30 @@
+<!-- products.html -->
+---
+layout: page
+title: "Produk Kami"
+permalink: /products/
+---
+
+<section class="py-12 bg-neutral1">
+  <div class="container mx-auto px-6">
+    <h1 class="text-4xl font-heading text-primary mb-8 text-center">Produk Kami</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% for product in site.data.products %}
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="{{ site.baseurl }}{{ product.image }}" alt="{{ product.name }}" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h2 class="text-2xl font-heading text-primary">{{ product.name }}</h2>
+          <ul class="mt-4 list-disc list-inside text-neutral2">
+            {% for feat in product.features %}
+            <li>{{ feat }}</li>
+            {% endfor %}
+          </ul>
+          <a href="{{ site.baseurl }}/products/{{ product.id }}/" class="mt-4 inline-block text-secondary font-semibold hover:text-accent">
+            Baca Selanjutnya →
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
