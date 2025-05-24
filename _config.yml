@@ -1,0 +1,94 @@
+# -----------------------------------------------------------------------------
+# Site Settings
+# -----------------------------------------------------------------------------
+title: "BE International"
+description: "Pusat solusi kesihatan dan kebugaran – Shiruto, Néx Bio & Aulora Pant"
+url: "https://AzlanSihat.github.io"    # Gantilah jika ada domain custom
+baseurl: "/BE_EJEN"                    # Nama repo anda
+
+# -----------------------------------------------------------------------------
+# Theme & Plugins
+# -----------------------------------------------------------------------------
+theme: minima                          # Anda boleh ubah ke theme lain jika mahu
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# -----------------------------------------------------------------------------
+# Markdown & Permalinks
+# -----------------------------------------------------------------------------
+markdown: kramdown
+permalink: pretty                      # /about/ bukannya /about.html
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+collections:
+  products:
+    output: true
+    permalink: /products/:name/
+
+# -----------------------------------------------------------------------------
+# Data Folders
+# -----------------------------------------------------------------------------
+# Senarai folder yang Jekyll akan scan
+include:
+  - _data
+  - _includes
+  - _layouts
+  - _posts
+  - assets
+
+# -----------------------------------------------------------------------------
+# Defaults
+# -----------------------------------------------------------------------------
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: product
+
+# -----------------------------------------------------------------------------
+# Google Fonts
+# -----------------------------------------------------------------------------
+fonts:
+  heading: "Montserrat:600,700"
+  body:    "Lora:400,500"
+
+# -----------------------------------------------------------------------------
+# Color Palette
+# -----------------------------------------------------------------------------
+colors:
+  primary:   "#00539C"
+  secondary: "#FFC20E"
+  neutral1:  "#F5F5F5"
+  neutral2:  "#333333"
+  accent:    "#008E97"
+
+# -----------------------------------------------------------------------------
+# Sass / Tailwind (jika guna Tailwind via gems atau npm build)
+# -----------------------------------------------------------------------------
+sass:
+  style: compressed
+
+# -----------------------------------------------------------------------------
+# Build Settings
+# -----------------------------------------------------------------------------
+highlighter: rouge
+incremental: false
+future: true
+
+# -----------------------------------------------------------------------------
+# SEO & Social (optional)
+# -----------------------------------------------------------------------------
+seo:
+  lang: "ms"
+  twitter: "BE_International"
+  facebook:
+    publisher: "BEInternational"

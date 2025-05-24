@@ -1,0 +1,74 @@
+---
+layout: home
+title: "BE International"
+permalink: /
+---
+
+<!-- Hero Section -->
+<section class="bg-primary text-white py-20">
+  <div class="container mx-auto px-6 text-center">
+    <h1 class="text-5xl font-heading">{{ page.title }}</h1>
+    <p class="mt-4 text-xl">{{ site.description }}</p>
+    <a href="{{ site.baseurl }}/products.html"
+       class="mt-8 inline-block bg-secondary text-neutral2 px-6 py-3 font-semibold rounded-lg hover:bg-accent transition">
+      Lihat Produk Kami
+    </a>
+  </div>
+</section>
+
+<!-- Produk Kami -->
+<section class="py-16 bg-neutral1">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-heading text-neutral2 text-center mb-8">Produk Kami</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% for product in site.data.products %}
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="{{ site.baseurl }}{{ product.image }}"
+             alt="{{ product.name }}"
+             class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-heading text-primary">{{ product.name }}</h3>
+          <ul class="mt-4 list-disc list-inside text-neutral2">
+            {% for feat in product.features limit:3 %}
+            <li>{{ feat }}</li>
+            {% endfor %}
+          </ul>
+          <a href="{{ site.baseurl }}/products/{{ product.id }}/"
+             class="mt-4 inline-block text-secondary font-semibold hover:text-accent">
+            Baca Selanjutnya →
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Tentang Kami -->
+<section class="py-16 bg-neutral2 text-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-heading mb-4">Tentang Kami</h2>
+    <p class="max-w-2xl mx-auto mb-6">
+      BE International berkomitmen menyediakan solusi kesihatan dan kebugaran
+      berkualiti melalui produk Shiruto, Néx Bio, dan Aulora Pant.
+    </p>
+    <a href="{{ site.baseurl }}/about.html"
+       class="inline-block bg-secondary text-neutral2 px-6 py-3 font-semibold rounded-lg hover:bg-accent transition">
+      Selanjutnya Tentang Kami
+    </a>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-16 bg-neutral1 text-center">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-heading mb-4">Ada Pertanyaan?</h2>
+    <p class="mb-6 text-neutral2">
+      Hubungi kami untuk konsultasi atau order langsung.
+    </p>
+    <a href="{{ site.baseurl }}/contact/"
+       class="inline-block bg-primary text-white px-6 py-3 font-semibold rounded-lg hover:bg-accent transition">
+      Hubungi Kami
+    </a>
+  </div>
+</section>

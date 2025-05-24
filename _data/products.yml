@@ -1,0 +1,26 @@
+- id: shiruto
+  name: Shiruto
+  image: "/assets/images/shiruto.jpg"
+  features:
+    - "Melindungi sel-sel badan"
+    - "Membaikpulih sistem badan"
+    - "Menyingkirkan sel rosak dan tua"
+    - "Menguatkan sistem imun"
+
+- id: nexbio
+  name: Néx Bio
+  image: "/assets/images/nexbio.jpg"
+  features:
+    - "Membantu melancarkan pencernaan"
+    - "Meningkatkan penyerapan nutrien"
+    - "Memperbaiki kesihatan kulit"
+    - "Meningkatkan fokus dan mood"
+
+- id: aulora-pant
+  name: Aulora Pant
+  image: "/assets/images/aulora-pant.jpg"
+  features:
+    - "Melancarkan perjalanan darah"
+    - "Menyokong tulang belakang"
+    - "Meransang detoksifikasi"
+    - "Meningkatkan pertumbuhan otot-otot yang cedera"
