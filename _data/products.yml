@@ -1,6 +1,6 @@
 - id: shiruto
   name: "Shiruto"
-  image: "/assets/images/shiruto.jpg"
+  image: "/assets/images/shiruto.png"
   features:
     - "Melindungi sel-sel badan"
     - "Membaikpulih sistem badan"
@@ -9,7 +9,7 @@
 
 - id: nexbio
   name: "Néx Bio"
-  image: "/assets/images/nexbio.jpg"
+  image: "/assets/images/nexbio.png"
   features:
     - "Membantu melancarkan pencernaan"
     - "Meningkatkan penyerapan nutrien"
@@ -18,7 +18,7 @@
 
 - id: aulora-pant
   name: "Aulora Pant"
-  image: "/assets/images/aulora-pant.jpg"
+  image: "/assets/images/aulora-pant.png"
   features:
     - "Melancarkan perjalanan darah"
     - "Menyokong tulang belakang"
